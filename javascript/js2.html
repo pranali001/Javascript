@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <title>temporal dead zone</title>
+        <script>
+            console.log(b);
+            console.log(a);
+            console.log(d); // not defined  because c s not defined anywhere.
+            console.log(c); //not defined 
+            let a=10; // let and const are hoisted. we cant use them before initialization and will result to temporal dead zone. and also we cannot redeclare a variable using let and const
+            var b=3; //this could be accesed 
+            const c=4;
+//What is block?
+// compound statement and it is defined by curly braces {}
+//for eg:  function b(){ ---> this is a block of statement which prints multiple statement in one block
+    //var x=100;
+   // console.log(x);
+//}
+
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+
+function a(){
+ var b =10;
+ c(); //lexical
+ function c(){
+    console.log(b);
+ }
+}
+a();
+        </script>
+    </body>
+    </html>

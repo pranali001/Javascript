@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <script>
+      //js is synchronous and single threaded language.
+      setTimeout(function () {
+        console.log("Timer");
+      }, 5000);
+
+      function x(y) {
+        console.log("x");
+        y();
+      }
+      x(function y() {
+        // ys is the call back function
+        console.log("y");
+      });
+    </script>
+  </body>
+</html>

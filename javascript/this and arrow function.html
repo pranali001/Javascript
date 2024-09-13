@@ -1,0 +1,47 @@
+<html>
+    <head>
+        </head>
+        <title>This and Arrow Function</title>
+        <body>
+            <h3> this</h3>
+            <script>
+
+const user = {
+username: "pranali",
+age: 23,
+
+welcomeMsg: function() {
+console.log(`${this.username} , welcome to my page`); // this will only refer current context which is in the block.
+
+}
+}
+user.welcomeMsg()
+user.username="sam"
+user.welcomeMsg()// this will print the name sam with the welcomemsg
+
+function one(){
+    let username="chiu"
+    console.log(this.username);
+}
+one() // this function will show undefined
+
+const addtwo = (num1,num2) =>{ //  Basic arrow  function......if curly brackets are used in arrow function then return keyword is used
+  return num1+num2
+}
+console.log(addtwo(2,4));
+
+const addnum= (num1,num2) => num1+num2 // if curly brackets are not used then no return keyword will be used
+
+console.log(addnum(2,3));
+
+const addnum1= (num1,num2) => num1+num2 // if rounded  brackets (parenthises) are used then  return keyword will be used
+
+console.log(addnum1(2,5));
+
+const name= (name) => ({username:"pranali"}); // To return the object. parenthises is always used.
+
+console.log(name);
+            </script>
+        </body>
+    </head>
+</html>

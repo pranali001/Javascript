@@ -1,0 +1,25 @@
+<html>
+    <!-- Hoisting in JavaScript (variables & functions)-->
+    <body>
+        <script>
+
+getName();
+console.log(x); //here it will show undefined because it is initiallised after.
+
+var x = 5;
+
+function getName() {
+  console.log("HEY Javascript!!");
+
+}
+getName1();
+console.log(x1); // here it will show not defined
+
+
+
+function getName1() {
+  console.log("HEY Javascript!!");
+}
+</script>
+</body>
+</html>

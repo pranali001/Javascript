@@ -1,0 +1,32 @@
+<!--The setTimeout() is executed only once.
+
+If you need repeated executions, use setInterval() instead.
+
+Use the clearTimeout() method to prevent the function from starting.
+
+To clear a timeout, use the id returned from setTimeout():
+
+myTimeout = setTimeout(function, milliseconds);
+Then you can to stop the execution by calling clearTimeout():
+
+clearTimeout(myTimeout);-->
+<html>
+  <body>
+    <p id="demo"></p>
+    <button onclick="myStopFunction()">Stop time</button>
+    <script>
+      //alert("hello!!");
+      //setTimeout(function () {
+      //  alert("I am inside of settimeout");
+      //}, 2000);
+      const element = document.getElementById("demo");
+      setInterval(function () {
+        element.innerHTML += "Hello";
+      }, 1000000000);
+      function myStopFunction() {
+        clearInterval(setInterval);
+      }
+      console.log("HAppy birthday!!!");
+    </script>
+  </body>
+</html>

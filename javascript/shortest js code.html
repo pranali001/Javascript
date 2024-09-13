@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            var x=10; //this is global space 
+            a();
+             function a(){
+                var x=2;
+                console.log(x);
+             }
+a();
+             console.log(x);
+             a();
+console.log(b); //undefined output
+             var b=7;
+             console.log(b);
+             console.log(c);// output will be not defined 
+
+             var d;
+             console.log(d);// undefined  output will not be printed 
+
+            </script>
+        </body>
+        </html>

@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      a(); // in this case it can be called before declaration
+      b(); // in tis case it will show error.  cannot be called before its definition. Can be anonymous or named
+      function a() {
+        var a = 5;
+        console.log(a, "a called"); // it is just how u create a function
+      }
+      var b = function () {
+        console.log(" B called"); //another way of creating function
+      };
+
+      //difference between function statement and function expression is hoisting.
+    </script>
+  </body>
+</html>
